@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carry the Boats - Motivational Generator</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Impact, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-image: url('images/boats-logs.jpg');
+      background-size: cover;
+      background-position: center;
+      text-shadow: 2px 2px 6px black;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+    }
+
+    #quote-box {
+      font-size: 1.8rem;
+      margin: 30px auto;
+      padding: 20px;
+      border: 3px solid #f00;
+      max-width: 700px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+    }
+
+    button {
+      background-color: #f00;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #b30000;
+    }
+
+    a {
+      display: block;
+      margin-top: 30px;
+      color: #ccc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Carry the Boats</h1>
+  <div id="quote-box">Click the button to hear Goggins in your head...</div>
+  <button onclick="generateQuote()"> MOTIVATE ME</button>
+  <a href="lifting.html"> Back to Scratch Page</a>
+
+  <script>
+    const quotes = [
+      "Who's gonna carry the boats... and the logs?!",
+      "You don't know me son!",
+      "Stay hard.",
+      "Suffering is the true test of life.",
+      "You will never learn from people if you always tap out.",
+      "The only thing more contagious than a good attitude is a bad one.",
+      "It's about what we do when no one's watching.",
+      "Be uncommon amongst uncommon people.",
+      "Don't stop when you're tired - stop when you're done.",
+      "You're in danger of living a life so soft that you'll die without ever realizing your true potential."
+    ];
+
+    function generateQuote() {
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      document.getElementById("quote-box").textContent = quotes[randomIndex];
+    }
+  </script>
+</body>
+</html>
