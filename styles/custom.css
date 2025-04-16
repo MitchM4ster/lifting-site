@@ -1,0 +1,79 @@
+body {
+    /* Making a background color and the font of the website */
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+iframe {
+    /* Making the embeded video cenetered */
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+/* making a border for my embedded video */
+.motivational-video {
+    border: 2px solid red;
+}
+/* Making a font size and structure for my into section */
+.intro-text {
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+}
+/* making a section border */
+.intro-section{
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+/* making the same for workout section */
+.workout-section{
+    background-color: #e6f7ff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+/* making one for the photo section */
+.photo-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+/* adding a design to the tableau chart */
+.tableauPlaceholder {
+    margin: 40px auto;
+    max-width: 100%;
+}
+/* I must now add the background image for index.html so I am gonna do that now */
+.home-background{ 
+   background-image: url(../images/boatsandlogs.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   min-height: 110vh;
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0;
+   padding-top: 60px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.home-background a {
+background-color: rgba(0, 0, 0, 0.5);
+color: white;
+padding: 12px 24px;
+margin: 10px;
+text-decoration: none;
+font-size: 12px;
+font-weight: bold;
+border-radius: 8px;
+transition: background-color 0.2s;
+}
+.home-background a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
